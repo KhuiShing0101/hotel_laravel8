@@ -42,6 +42,12 @@
             <div class="animate form login_form">
                 <section class="login_content">
 
+                    @if(session()->has('error_message'))
+
+                        <span style="color:red;">ERROR::{{session()->get("error_message")}}</span>
+
+                    @endif
+
                     <form action="{{route('login')}}" method="POST">
 
                         {{-- {!!Form::open(['url'=>'/login','method'=>'POST'])!!} --}}
@@ -65,7 +71,7 @@
                         @endif
 
                         <div>
-                            <input type="text" class="form-control rounded-0" name="user_name" value="" placeholder="Username"/>
+                            <input type="text" class="form-control rounded-0" name="name" value="" placeholder="Username"/>
                         </div>
 
                         <div>

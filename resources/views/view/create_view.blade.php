@@ -78,6 +78,7 @@
 
     <h2>Create View</h2>
 
+
     <div class="container" style="width:800px; margin:0 auto;">
 
         @if ($errors->has('name'))
