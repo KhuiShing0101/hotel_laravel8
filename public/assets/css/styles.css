@@ -1,0 +1,94 @@
+.drag-area
+{
+    margin-top: 50px;
+    border    : 2px dashed lightslategray;
+    height: 300px;
+    width: 500px;
+    border-radius: 5px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.drag-area .icon
+{
+    font-size:100px;
+    color: white;
+}
+.drag-area header
+{
+    font-size : 30px;
+    font-weight:500;
+    color: white;
+}
+.drag-area span 
+{
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    margin:10px 0 15px 0;
+}
+.input[type="file"]
+{
+    opacity: 0;
+    -moz-opacity: 0;
+
+    filter: alpha(Opacity=0);
+    
+    -khtml-opacity: 0;
+
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+     margin-left: 20px;
+
+}
+.input-file input {
+    visibility: hidden;
+}
+
+.input-file
+{
+    text-align:center;
+    background-color: #3276b1;
+    color:white;
+    display: block;
+    width: 144px;
+    height: 33px;
+    font-size: 17px;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left:112px;
+}
+
+.preview-image
+{
+    width:100%;
+}
+
+.hide{
+    display:none !important;
+}
+
+.show {
+    display:inline !important;
+}
+
+.upload-btn{
+    display:none;
+}
+
+.upload-btn-active{
+    display:"";
+}
+
+.drag-area.active
+{
+    border: 2px solid skyblue;
+}
+
+.show-img-preview
+{
+    display: none;
+}
